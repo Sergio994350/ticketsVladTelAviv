@@ -73,7 +73,7 @@ public class Main {
         double sumTime = 0;
         int index = (int) (ticketlist.tickets.size() * 0.9);
         // пробегаем по массиву, вычислем время полета в каждом случае
-        for (int i = 0; i < index; i++) {
+        for (int i = 0; i <= index; i++) {
             sumTime += howLongWeFly(ticketlist.tickets.get(i).departureTime,
                     ticketlist.tickets.get(i).arrivalTime);
         }
